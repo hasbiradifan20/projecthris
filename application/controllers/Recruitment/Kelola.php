@@ -19,6 +19,7 @@ class Kelola extends CI_Controller
         $this->load->view('recruitment/kelola', $data);
         $this->load->view('templates/footer');
     }
+
     public function hapus($id)
     {
         if ($this->Kelola_model->hapus($id)) {
