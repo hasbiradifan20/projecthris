@@ -20,15 +20,15 @@ class Master_Data extends CI_Controller
         $this->load->view('master/index',$data);
         $this->load->view('templates/footer');
     }
-
-    public function posisi()
+    public function dataposisi()
     {
         $data['title'] = "Data Posisi";
-        $data['datakaryawan'] = $this->Master_model->getAllDataKaryawan();
+        $data['dataposisi'] = $this->Master_model->getAllDataPosisi();
         $this->load->view('templates/header',$data);
         $this->load->view('templates/navbar');
         $this->load->view('templates/sidebar');
-        $this->load->view('master/posisi');
+        $this->load->view('master/dataposisi',$data);
         $this->load->view('templates/footer');
     }
+
 }
