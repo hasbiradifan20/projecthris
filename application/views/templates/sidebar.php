@@ -53,6 +53,7 @@
                             </a>
                         </li>
                     </ul>
+
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
                             <a href="#" class="nav-link" style="background-color: #ffffff; color: black;">
@@ -85,7 +86,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">
+                            <a href="<?= base_url('Performences/penilaiankinerja') ?>" class="nav-link active">
                                 <p>Penilaian Kinerja</p>
                             </a>
                         </li>
