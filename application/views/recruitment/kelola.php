@@ -9,28 +9,27 @@
             <thead>
                 <tr>
                     <th>No</th>
-                    <th>NIK</th>
-                    <th>Nama Karyawan</th>
-                    <th>Foto</th>
-                    <th>Gaji Pokok</th>
-                    <th>Level</th>
+                    <th>Nama Pekerjaan</th>
+                    <th>Kualifikasi</th>
+                    <th>Tanggal Berakhir</th>
+                    <th>foto</th>
                     <th>Aksi</th>
+
                 </tr>
             </thead>
             <tbody>
                 <?php $no = 1 ?>
-                <?php foreach ($datakaryawan as $k) : ?>
+                <?php foreach ($kelolapekerjaan as $k) : ?>
                     <tr>
                         <th><?= $no++; ?></th>
-                        <td><?= $k['nik']; ?></td>
-                        <td><?= $k['nama_karyawan']; ?></td>
-                        <td><?= $k['foto']; ?></td>
-                        <td><?= $k['gajipokok']; ?></td>
-                        <td><?= $k['level']; ?></td>
+                        <td><?= $k['nama_pekerjaan']; ?></td>
+                        <td><?= $k['kualifikasi']; ?></td>
+                        <td><?= $k['tanggal_berakhir']; ?></td>
+                        <td><?= $k['img']; ?></td>
                         <td>
                             <a href="" class="badge bg-warning">detail</a>
                             <a href="" class="badge bg-success">edit</a>
-                            <a href="" class="badge bg-danger">delete</a>
+                            <a href="<?= base_url() ?>recruitment/kelola/hapus/<?= $k['id']  ?>" class="badge bg-danger">delete</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>

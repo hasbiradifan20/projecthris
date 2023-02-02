@@ -16,7 +16,16 @@ class Kelola extends CI_Controller
         $this->load->view('templates/header', $data);
         $this->load->view('templates/navbar');
         $this->load->view('templates/sidebar');
-        $this->load->view('kelola/index', $data);
+        $this->load->view('recruitment/kelola', $data);
         $this->load->view('templates/footer');
+    }
+    public function hapus($id)
+    {
+        if ($this->Kelola_model->hapus($id)) {
+            $this->session->set_flashdata('message', 'Data berhasil dihapus');
+        } else {
+            $this->session->set_flashdata('message', 'Data gagal dihapus');
+        }
+        redirect('recruitment/kelola');
     }
 }
