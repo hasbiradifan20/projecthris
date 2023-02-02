@@ -39,35 +39,36 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="<?= base_url('master_data') ?>" class="nav-link active">
+                            <a href="<?= base_url('master_data') ?>" class="nav-link"
+                                style="background-color: #ffffff;color: black;">
                                 <p>Data Karyawan</p>
                             </a>
                         </li>
                     </ul>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">
+                            <a href="#" class="nav-link" style="background-color: #ffffff;color: black;">
                                 <p>Data Posisi</p>
                             </a>
                         </li>
                     </ul>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">
+                            <a href="#" class="nav-link" style="background-color: #ffffff; color: black;">
                                 <p>Data Akun</p>
                             </a>
                         </li>
                     </ul>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">
+                            <a href="#" class="nav-link" style="background-color: #ffffff;color: black;">
                                 <p>Data Mitra</p>
                             </a>
                         </li>
                     </ul>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">
+                            <a href="#" class="nav-link" style="background-color: #ffffff;color: black;">
                                 <p>Soal Kuesioner</p>
                             </a>
                         </li>
