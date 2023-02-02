@@ -38,27 +38,21 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-<<<<<<< Updated upstream
-                            <a href="<?= base_url('master_data') ?>" class="nav-link"
+                            <a href="<?= base_url('master/master_data') ?>" class="nav-link"
                                 style="background-color: #ffffff;color: black;">
-=======
-                            <a href="<?= base_url('master/master_data') ?>" class="nav-link active">
->>>>>>> Stashed changes
                                 <p>Data Karyawan</p>
                             </a>
                         </li>
                     </ul>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-<<<<<<< Updated upstream
-                            <a href="#" class="nav-link" style="background-color: #ffffff;color: black;">
-=======
-                            <a href="<?= base_url('master/data_posisi') ?>" class="nav-link active">
->>>>>>> Stashed changes
+                            <a href="" class="nav-link"
+                                style="background-color: #ffffff;color: black;">
                                 <p>Data Posisi</p>
                             </a>
                         </li>
                     </ul>
+                   
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
                             <a href="#" class="nav-link" style="background-color: #ffffff; color: black;">
@@ -91,7 +85,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">
+                            <a href="<?= base_url('Performences/penilaiankinerja') ?>" class="nav-link active">
                                 <p>Penilaian Kinerja</p>
                             </a>
                         </li>
