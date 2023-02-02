@@ -28,4 +28,19 @@ class Kelola extends CI_Controller
         }
         redirect('recruitment/kelola');
     }
+    public function tambah()
+    {
+        $data = array(
+            'nama_pekerjaan' => $this->input->post('nama_pekerjaan'),
+            'kualifikasi' => $this->input->post('kualifikasi'),
+            'tanggal_berakhir' => $this->input->post('tanggal_berakhir'),
+            'img' => $this->input->post('img'),
+        );
+        $result = $this->Kelola_model->tambah($data);
+        if ($result) {
+            //berhasil
+        } else {
+            //gagal
+        }
+    }
 }
