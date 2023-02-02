@@ -4,8 +4,7 @@
 ">
     <!-- Brand Logo -->
     <a href="#" class="brand-link">
-        <img src="<?= base_url() ?>dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
-            class="brand-image img-circle elevation-3" style="opacity: .8">
+        <img src="<?= base_url() ?>dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
         <span class="brand-text font-weight-light">HRIS</span>
     </a>
 
@@ -246,35 +245,35 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">
+                            <a href="<?= base_url('Recruitment/kelola') ?>" class="nav-link active">
                                 <p>Kelola Pekerjaan</p>
                             </a>
                         </li>
                     </ul>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">
+                            <a href="<?= base_url('berkas') ?>" class="nav-link active">
                                 <p>Berkas Pelamar</p>
                             </a>
                         </li>
                     </ul>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">
+                            <a href="<?= base_url('jadwal') ?>" class="nav-link active">
                                 <p>Jadwal Interview</p>
                             </a>
                         </li>
                     </ul>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">
+                            <a href="<?= base_url('soal') ?>" class="nav-link active">
                                 <p>Soal Test Pelamar</p>
                             </a>
                         </li>
                     </ul>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">
+                            <a href="<?= base_url('lamaran') ?>" class="nav-link active">
                                 <p>Penilaian & Laporan Recruitment</p>
                             </a>
                         </li>
