@@ -1,0 +1,28 @@
+.namaawal {
+	color: #ffffff;
+	font-weight: 700;
+	text-align: end;
+	font-size: 32px;
+	margin-top: 30px;
+}
+.namaakhir {
+	color: #ff0000;
+	font-size: 32px;
+	margin-top: 30px;
+}
+.brand {
+	display: flex;
+	flex-direction: row;
+}
+.backawal {
+	float: left;
+	background-color: #ff0000;
+	width: 50%;
+	height: 1000px;
+}
+.backakhir {
+	float: right;
+	background-color: #d4d4d4;
+	width: 50%;
+	height: 1000px;
+}
