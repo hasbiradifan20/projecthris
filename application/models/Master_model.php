@@ -9,4 +9,8 @@ class Master_model extends CI_Model {
     {
         return $this->db->get('data_posisi')->result_array();
     }
+    public function getAllSoalKuesioner() 
+    {
+        return $this->db->get('soal_kuesioner')->result_array();
+    }
 }

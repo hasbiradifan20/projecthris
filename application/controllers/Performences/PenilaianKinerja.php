@@ -21,11 +21,18 @@ class PenilaianKinerja extends CI_Controller
     }
     public function hapus($id_penilaian_kinerja)
     {
-        if ($this->Kelola_model->hapus($id_penilaian_kinerja)) {
+        if ($this->PenilaianKinerja_model->hapus($id_penilaian_kinerja)) {
             $this->session->set_flashdata('message', 'Data berhasil dihapus');
         } else {
             $this->session->set_flashdata('message', 'Data gagal dihapus');
         }
         redirect('performences/penilaiankinerja'); //ke view performences
+    }
+
+    public function tambah($id_penilaian_kinerja)
+    {
+        {
+         $this->db->insert("nama_tabel", $data);
+        } 
     }
 }
