@@ -4,7 +4,8 @@
 ">
     <!-- Brand Logo -->
     <a href="#" class="brand-link">
-        <img src="<?= base_url() ?>dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+        <img src="<?= base_url() ?>dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
+            class="brand-image img-circle elevation-3" style="opacity: .8">
         <span class="brand-text font-weight-light">HRIS</span>
     </a>
 
@@ -38,23 +39,16 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-<<<<<<< Updated upstream
-                            <a href="<?= base_url('master_data') ?>" class="nav-link"
-                                style="background-color: #ffffff;color: black;">
-=======
-                            <a href="<?= base_url('master/master_data') ?>" class="nav-link active">
->>>>>>> Stashed changes
+                            <a href="<?= base_url('master/data_karyawan') ?>" class="nav-link"
+                                style="background-color: #ffffff; color: black;">
                                 <p>Data Karyawan</p>
                             </a>
                         </li>
                     </ul>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-<<<<<<< Updated upstream
-                            <a href="#" class="nav-link" style="background-color: #ffffff;color: black;">
-=======
-                            <a href="<?= base_url('master/data_posisi') ?>" class="nav-link active">
->>>>>>> Stashed changes
+                            <a href="<?= base_url('master/data_posisi') ?>" class="nav-link"
+                                style="background-color: #ffffff; color: black;">
                                 <p>Data Posisi</p>
                             </a>
                         </li>
