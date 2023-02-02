@@ -6,7 +6,7 @@
         <div class="namaakhir"><b> NOLOGI INDONESIA</b></div>
     </div>
 </div>
-<div class="row justify-content-center mt-5">
+<div class="row justify-content-center mt-5" style="/* display: flex: ; */ position: relative; top: -1000px;">
 
     <div class="col-lg-4">
 
@@ -23,13 +23,11 @@
                             <form class="user" method="POST" action="">
                                 <div class="form-group">
                                     <label for="username"><b>Username</b></label>
-                                    <input type="text" class="form-control form-control-user" id="username"
-                                        name="username" placeholder="Masukan username">
+                                    <input type="text" class="form-control form-control-user" id="username" name="username" placeholder="Masukan username">
                                 </div>
                                 <div class="form-group">
                                     <label for="password"><b>Password</b></label>
-                                    <input type="password" class="form-control form-control-user" id="password"
-                                        name="password" placeholder="Masukan password">
+                                    <input type="password" class="form-control form-control-user" id="password" name="password" placeholder="Masukan password">
                                     <div class="text-right">
                                         <a class="small" href="">Lupa Password?</a>
                                     </div>
