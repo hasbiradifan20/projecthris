@@ -149,8 +149,8 @@
                         </p>
                     </a>
                     <ul class="nav nav-treeview nav-sidebar nav-child-indent">
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link active">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
                                 <p>
                                     Setting Pajak
                                     <i class="right fas fa-angle-right"></i>
@@ -172,9 +172,9 @@
                             </ul>
                         </li>
                     </ul>
-                    <ul class="nav nav-treeview">
+                    <ul class="nav nav-treeview nav-sidebar nav-child-indent">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">
+                            <a href="#" class="nav-link">
                                 <p>
                                     Setting BPJS Kesehatan
                                     <i class="right fas fa-angle-right"></i>
@@ -210,9 +210,9 @@
                             </a>
                         </li>
                     </ul>
-                    <ul class="nav nav-treeview">
+                    <ul class="nav nav-treeview nav-sidebar nav-child-indent">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">
+                            <a href="#" class="nav-link">
                                 <p>
                                     Laporan
                                     <i class="right fas fa-angle-right"></i>
