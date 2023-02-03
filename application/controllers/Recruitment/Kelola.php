@@ -31,11 +31,30 @@ class Kelola extends CI_Controller
     }
     public function tambah()
     {
-        $data = array(
-            'nama_pekerjaan' => $this->input->post('nama_pekerjaan'),
-            'kualifikasi' => $this->input->post('kualifikasi'),
-            'tanggal_berakhir' => $this->input->post('tanggal_berakhir'),
-            'img' => $this->input->post('img'),
-        );
+        $nama = $this->input->post('namaPekerjaan');
+        $kualifikasi = $this->input->post('kualifikasi');
+        $tanggalberakhir = $this->input->post('tanggalberakhir');
+        $img = $this->input->post('img');
+
+        // Validasi data
+        $this->form_validation->set_rules('namaPekerjaan', 'Nama Pekerjaan', 'required');
+        $this->form_validation->set_rules('kualifikasi', 'Kualifikasi', 'required');
+        $this->form_validation->set_rules('tanggalberakhir', 'Tanggal Berakhir', 'required');
+        $this->form_validation->set_rules('img', 'img', 'required');
+
+        if ($this->form_validation->run() == FALSE) {
+            // Validasi gagal, tampilkan pesan error
+            echo validation_errors();
+        } else {
+            // Validasi berhasil, simpan data ke database
+            $data = array(
+                'nama_pekerjaan' => $nama,
+                'kualifikasi' => $kualifikasi,
+                'tanggal_berakhir' => $tanggalberakhir,
+                'img' => $img
+            );
+            $this->db->insert('kelola', $data);
+            echo 'Data berhasil disimpan';
+        }
     }
 }

@@ -55,10 +55,34 @@
 </script>
 <script>
     $(document).ready(function() {
-                $('#simpanPekerjaan').click(function() {
-                            var nama = $('#namaPekerjaan').val();
-                            var deskripsi = $('#deskripsiPekerjaan').val();
+        $('#simpanPekerjaan').click(function() {
+            var nama = $('#namaPekerjaan').val();
+            var kualifikasi = $('#kualifikasi').val();
+            var tanggalberakhir = $('#tanggalberakhir').val();
+            var img = $('#img').val();
+
+            $.ajax({
+                url: "<?php echo base_url('pekerjaan/tambah'); ?>",
+                type: "post",
+                data: {
+                    namaPekerjaan: nama,
+                    kualifikasi: kualifikasi,
+                    tanggalberakhir: tanggalberakhir,
+                    img: img
+                },
+                success: function(response) {
+                    // Tampilkan pesan sukses/error
+                    alert(response);
+                }
+            });
+        });
+    });
 </script>
+
+
+
+
+
 </body>
 
 </html>

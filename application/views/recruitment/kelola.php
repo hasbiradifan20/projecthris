@@ -61,21 +61,29 @@
             </div>
             <div class="modal-body">
                 <!-- Form Tambah Pekerjaan -->
-                <form>
+                <form action="" method="post">
                     <div class="form-group">
                         <label for="namaPekerjaan">Nama Pekerjaan</label>
                         <input type="text" class="form-control" id="namaPekerjaan" placeholder="Masukkan Nama Pekerjaan">
                     </div>
                     <div class="form-group">
-                        <label for="deskripsiPekerjaan">Deskripsi Pekerjaan</label>
-                        <input type="text" class="form-control" id="deskripsiPekerjaan" placeholder="Masukkan Deskripsi Pekerjaan">
+                        <label for="deskripsiPekerjaan">Kualifikasi</label>
+                        <input type="text" class="form-control" id="kualifikasi" placeholder="Masukkan kualifikasi">
+                    </div>
+                    <div class="form-group">
+                        <label for="deskripsiPekerjaan">Tanggal Berakhir</label>
+                        <input type="date" class="form-control" id="tanggalberakhir">
+                    </div>
+                    <div class="form-group">
+                        <label for="deskripsiPekerjaan">Foto</label>
+                        <input type="file" class="form-control" id="img">
                     </div>
                     <!-- ... tambahkan input lain sesuai dengan data yang ingin ditambahkan ... -->
                 </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-                <button type="button" class="btn btn-primary" id="simpanPekerjaan">Simpan</button>
+                <button type="submit" class="btn btn-primary" id="simpanPekerjaan">Simpan</button>
             </div>
         </div>
     </div>
