@@ -18,7 +18,7 @@
                 <?php foreach ($soalkuesioner as $s) : ?>
                 <tr>
                     <th><?= $no++; ?></th>
-                    <td><?= $s['pertanyaan']; ?></td>
+                    <td><?= $s['kuesioner']; ?></td>
                     <td>
                         <a href="" class="badge bg-warning">detail</a>
                         <a href="" class="badge bg-success">edit</a>
