@@ -12,8 +12,4 @@ class Kelola_model extends CI_Model
         $this->db->delete('kelola');
         return ($this->db->affected_rows() > 0) ? true : false;
     }
-    public function tambah($data)
-    {
-        return $this->db->insert('kelola', $data);
-    }
 }

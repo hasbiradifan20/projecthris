@@ -37,11 +37,5 @@ class Kelola extends CI_Controller
             'tanggal_berakhir' => $this->input->post('tanggal_berakhir'),
             'img' => $this->input->post('img'),
         );
-        $result = $this->Kelola_model->tambah($data);
-        if ($result) {
-            //berhasil
-        } else {
-            //gagal
-        }
     }
 }

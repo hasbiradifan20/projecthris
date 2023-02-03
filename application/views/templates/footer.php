@@ -53,6 +53,12 @@
 
     });
 </script>
+<script>
+    $(document).ready(function() {
+                $('#simpanPekerjaan').click(function() {
+                            var nama = $('#namaPekerjaan').val();
+                            var deskripsi = $('#deskripsiPekerjaan').val();
+</script>
 </body>
 
 </html>

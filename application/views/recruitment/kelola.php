@@ -6,7 +6,9 @@
         </div>
         <!-- /.card-header -->
         <div class="card-body">
-            <button type="button" class="btn btn-success">Tambah Pekerjaan Baru</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tambahPekerjaanModal">
+                Tambah Pekerjaan Baru
+            </button>
             <table id="example2" class="table table-bordered table-striped">
                 <thead>
                     <tr>
@@ -40,15 +42,41 @@
                 </tbody>
 
             </table>
-            <form action="<?php echo site_url('recruitment/kelola/tambah'); ?>" method="post">
-                <input type="text" name="nama_pekerjaan">
-                <input type="text" name="kualifikasi">
-                <input type="date" name="tanggal_berakhir">
-                <input type="file" value="img">
-                <input type="submit" value="Add User">
-            </form>
+
         </div>
         <!-- /.card-body -->
     </div>
 
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="tambahPekerjaanModal" tabindex="-1" role="dialog" aria-labelledby="tambahPekerjaanModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="tambahPekerjaanModalLabel">Tambah Pekerjaan Baru</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Form Tambah Pekerjaan -->
+                <form>
+                    <div class="form-group">
+                        <label for="namaPekerjaan">Nama Pekerjaan</label>
+                        <input type="text" class="form-control" id="namaPekerjaan" placeholder="Masukkan Nama Pekerjaan">
+                    </div>
+                    <div class="form-group">
+                        <label for="deskripsiPekerjaan">Deskripsi Pekerjaan</label>
+                        <input type="text" class="form-control" id="deskripsiPekerjaan" placeholder="Masukkan Deskripsi Pekerjaan">
+                    </div>
+                    <!-- ... tambahkan input lain sesuai dengan data yang ingin ditambahkan ... -->
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-primary" id="simpanPekerjaan">Simpan</button>
+            </div>
+        </div>
+    </div>
 </div>
