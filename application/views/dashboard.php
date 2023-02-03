@@ -57,33 +57,30 @@
                 <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
         </div>
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title"><?= $title ?></h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+                <table id="example2" class="table table-bordered table-striped">
+                    <thead style="background-color: #ff0000;">
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Posisi</th>
+                            <th>Nama Lengkap</th>
+                            <th>Email</th>
+                            <th>Hari Tanggal</th>
+                            <th>Waktu</th>
+                            <th>Link</th>
+                            <th>Telepon Pelamar</th>
 
-<<<<<<< Updated upstream
-    </div>
-=======
-<div class="card">
-    <div class="card-header">
-        <h3 class="card-title"><?= $title ?></h3>
-    </div>
-    <!-- /.card-header -->
-    <div class="card-body">
-        <table id="example2" class="table table-bordered table-striped">
-            <thead style="background-color: #ff0000;">
-                <tr>
-                    <th>No</th>
-                    <th>Nama Posisi</th>
-                    <th>Nama Lengkap</th>
-                    <th>Email</th>
-                    <th>Hari Tanggal</th>
-                    <th>Waktu</th>
-                    <th>Link</th>
-                    <th>Telepon Pelamar</th>
+                        </tr>
+                    </thead>
+                </table>
 
-                </tr>
-            </thead>
-        </table>
-
+            </div>
+            <!-- /.card-body -->
+        </div>
     </div>
-    <!-- /.card-body -->
->>>>>>> Stashed changes
 </div>
