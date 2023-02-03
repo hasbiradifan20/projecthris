@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Soal_Kuesioner extends CI_Controller
+class DataPosisi extends CI_Controller
 {
     public function __construct()
     {
@@ -12,12 +12,12 @@ class Soal_Kuesioner extends CI_Controller
 
     public function index()
     {
-        $data['title'] = "Soal Kuesioner";
-        $data['soalkuesioner'] = $this->Master_model->getAllSoalKuesioner();
+        $data['title'] = "Data Posisi";
+        $data['dataposisi'] = $this->Master_model->getAllDataPosisi();
         $this->load->view('templates/header',$data);
         $this->load->view('templates/navbar');
         $this->load->view('templates/sidebar');
-        $this->load->view('master/soalkuesioner',$data);
+        $this->load->view('master/dataposisi',$data);
         $this->load->view('templates/footer');
     }
 

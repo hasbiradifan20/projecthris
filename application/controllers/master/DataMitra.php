@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Data_Karyawan extends CI_Controller
+class DataMitra extends CI_Controller
 {
     public function __construct()
     {
@@ -12,12 +12,12 @@ class Data_Karyawan extends CI_Controller
 
     public function index()
     {
-        $data['title'] = "Data Karyawan";
-        $data['datakaryawan'] = $this->Master_model->getAllDataKaryawan();
+        $data['title'] = "Data Posisi";
+        $data['dataposisi'] = $this->Master_model->getAllDataPosisi();
         $this->load->view('templates/header',$data);
         $this->load->view('templates/navbar');
         $this->load->view('templates/sidebar');
-        $this->load->view('master/datakaryawan',$data);
+        $this->load->view('master/datamitra',$data);
         $this->load->view('templates/footer');
     }
 

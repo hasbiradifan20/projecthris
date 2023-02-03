@@ -29,7 +29,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="<?= base_url('master/data_karyawan') ?>" class="nav-link"
+                            <a href="<?= base_url('master/datakaryawan') ?>" class="nav-link"
                                 style="background-color: #ffffff; color: black;">
                                 <p>Data Karyawan</p>
                             </a>
@@ -37,7 +37,7 @@
                     </ul>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="<?= base_url('master/data_posisi') ?>" class="nav-link"
+                            <a href="<?= base_url('master/dataposisi') ?>" class="nav-link"
                                 style="background-color: #ffffff; color: black;">
                                 <p>Data Posisi</p>
                             </a>
@@ -60,7 +60,8 @@
                     </ul>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="<?= base_url('master/soal_kuesioner') ?>" class="nav-link" style="background-color: #ffffff;color: black;">
+                            <a href="<?= base_url('master/soalkuesioner') ?>" class="nav-link"
+                                style="background-color: #ffffff;color: black;">
                                 <p>Soal Kuesioner</p>
                             </a>
                         </li>
