@@ -19,7 +19,7 @@ class Kelola extends CI_Controller
         $this->load->view('recruitment/kelola', $data);
         $this->load->view('templates/footer');
     }
-    
+
     public function hapus($id)
     {
         if ($this->Kelola_model->hapus($id)) {
@@ -28,5 +28,20 @@ class Kelola extends CI_Controller
             $this->session->set_flashdata('message', 'Data gagal dihapus');
         }
         redirect('recruitment/kelola');
+    }
+    public function tambah()
+    {
+        $data = array(
+            'nama_pekerjaan' => $this->input->post('nama_pekerjaan'),
+            'kualifikasi' => $this->input->post('kualifikasi'),
+            'tanggal_berakhir' => $this->input->post('tanggal_berakhir'),
+            'img' => $this->input->post('img'),
+        );
+        $result = $this->Kelola_model->tambah($data);
+        if ($result) {
+            //berhasil
+        } else {
+            //gagal
+        }
     }
 }

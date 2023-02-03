@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Data_Karyawan extends CI_Controller
+class DataKaryawan extends CI_Controller
 {
     public function __construct()
     {
