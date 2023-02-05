@@ -13,6 +13,7 @@
                     <th>Nama Karyawan</th>
                     <th>Foto</th>
                     <th>Gaji Pokok</th>
+                    <th>Status</th>
                     <th>Level</th>
                     <th>Aksi</th>
                 </tr>
@@ -26,6 +27,7 @@
                     <td><?= $k['nama_karyawan']; ?></td>
                     <td><?= $k['foto']; ?></td>
                     <td><?= $k['gajipokok']; ?></td>
+                    <td><?= $k['status']; ?></td>
                     <td><?= $k['level']; ?></td>
                     <td>
                         <a href="" class="badge bg-warning">detail</a>
