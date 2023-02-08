@@ -6,14 +6,14 @@ class DataKaryawan extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('Master_model');
+        $this->load->model('DataKaryawan_model');
 
     }
 
     public function index()
     {
         $data['title'] = "Data Karyawan";
-        $data['datakaryawan'] = $this->Master_model->getAllDataKaryawan();
+        $data['datakaryawan'] = $this->DataKaryawan_model->getAllDataKaryawan();
         $this->load->view('templates/header',$data);
         $this->load->view('templates/navbar');
         $this->load->view('templates/sidebar');

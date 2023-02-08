@@ -5,7 +5,7 @@
 <!-- Main Footer -->
 <footer class="main-footer">
     <!-- To the right -->
-    <div style="align=center">
+    <div>
         <strong>Copyright &copy; <?= date('Y'); ?></strong> PT. Sahaware Teknologi Indonesia
     </div>
 </footer>

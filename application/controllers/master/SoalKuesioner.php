@@ -6,14 +6,14 @@ class SoalKuesioner extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('Master_model');
+        $this->load->model('DataPosisi_model');
 
     }
 
     public function index()
     {
         $data['title'] = "Soal Kuesioner";
-        $data['soalkuesioner'] = $this->Master_model->getAllSoalKuesioner();
+        $data['soalkuesioner'] = $this->SoalKuesioner_model->getAllSoalKuesioner();
         $this->load->view('templates/header',$data);
         $this->load->view('templates/navbar');
         $this->load->view('templates/sidebar');
