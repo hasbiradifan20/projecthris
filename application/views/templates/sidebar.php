@@ -2,8 +2,8 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: #ff0000;">
     <!-- Brand Logo -->
     <a href="<?= base_url('dashboard') ?>" class="brand-link" style="color: #ffffff;">
-        <img src="<?= base_url() ?>dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
-            class="brand-image img-circle elevation-3">
+        <img src="<?= base_url() ?>dist/img/sahaware.jpg" alt="Sahaware"
+            class="brand-image img-circle elevation-3" width="85" height="85">
         <h3>HRIS</h3>
     </a>
     <!-- Sidebar -->
