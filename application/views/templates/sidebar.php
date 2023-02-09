@@ -1,9 +1,8 @@
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: #ff0000;">
     <!-- Brand Logo -->
-    <a href="<?= base_url('dashboard') ?>" class="brand-link" style="color: #ffffff;">
-        <img src="<?= base_url() ?>dist/img/sahaware.jpg" alt="Sahaware"
-            class="brand-image img-circle elevation-3" width="85" height="85">
+    <a href="<?= base_url('admin') ?>" class="brand-link" style="color: #ffffff;">
+        <img src="<?= base_url() ?>dist/img/sahaware.jpg" alt="Sahaware" class="brand-image img-circle elevation-3" width="85" height="85">
         <h3>HRIS</h3>
     </a>
     <!-- Sidebar -->
@@ -14,7 +13,7 @@
                 <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                 <li class="nav-item">
-                    <a href="<?= base_url('dashboard') ?>" class="nav-link" style="color: #ffffff;">
+                    <a href="<?= base_url('admin') ?>" class="nav-link" style="color: #ffffff;">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>Dashboard</p>
                     </a>
@@ -29,16 +28,14 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="<?= base_url('master/datakaryawan') ?>" class="nav-link"
-                                style="background-color: #ffffff; color: black;">
+                            <a href="<?= base_url('master/datakaryawan') ?>" class="nav-link" style="background-color: #ffffff; color: black;">
                                 <p>Data Karyawan</p>
                             </a>
                         </li>
                     </ul>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="<?= base_url('master/dataposisi') ?>" class="nav-link"
-                                style="background-color: #ffffff; color: black;">
+                            <a href="<?= base_url('master/dataposisi') ?>" class="nav-link" style="background-color: #ffffff; color: black;">
                                 <p>Data Posisi</p>
                             </a>
                         </li>
@@ -60,8 +57,7 @@
                     </ul>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="<?= base_url('master/soalkuesioner') ?>" class="nav-link"
-                                style="background-color: #ffffff;color: black;">
+                            <a href="<?= base_url('master/soalkuesioner') ?>" class="nav-link" style="background-color: #ffffff;color: black;">
                                 <p>Soal Kuesioner</p>
                             </a>
                         </li>
@@ -77,8 +73,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="<?= base_url('Performences/penilaiankinerja') ?>" class="nav-link "
-                                style="background-color: #ffffff; color: black;">
+                            <a href="<?= base_url('Performences/penilaiankinerja') ?>" class="nav-link " style="background-color: #ffffff; color: black;">
                                 <p>Penilaian Kinerja</p>
                             </a>
                         </li>
@@ -233,40 +228,35 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="<?= base_url('Recruitment/kelola') ?>" class="nav-link "
-                                style="background-color: #ffffff; color: black;">
+                            <a href="<?= base_url('Recruitment/kelola') ?>" class="nav-link " style="background-color: #ffffff; color: black;">
                                 <p>Kelola Pekerjaan</p>
                             </a>
                         </li>
                     </ul>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="<?= base_url('berkas') ?>" class="nav-link "
-                                style="background-color: #ffffff; color: black;">
+                            <a href="<?= base_url('berkas') ?>" class="nav-link " style="background-color: #ffffff; color: black;">
                                 <p>Berkas Pelamar</p>
                             </a>
                         </li>
                     </ul>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="<?= base_url('jadwal') ?>" class="nav-link "
-                                style="background-color: #ffffff; color: black;">
+                            <a href="<?= base_url('jadwal') ?>" class="nav-link " style="background-color: #ffffff; color: black;">
                                 <p>Jadwal Interview</p>
                             </a>
                         </li>
                     </ul>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="<?= base_url('soal') ?>" class="nav-link "
-                                style="background-color: #ffffff; color: black;">
+                            <a href="<?= base_url('soal') ?>" class="nav-link " style="background-color: #ffffff; color: black;">
                                 <p>Soal Test Pelamar</p>
                             </a>
                         </li>
                     </ul>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="<?= base_url('lamaran') ?>" class="nav-link "
-                                style="background-color: #ffffff; color: black;">
+                            <a href="<?= base_url('lamaran') ?>" class="nav-link " style="background-color: #ffffff; color: black;">
                                 <p>Penilaian & Laporan Recruitment</p>
                             </a>
                         </li>

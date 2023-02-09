@@ -11,30 +11,29 @@
                     <th>No</th>
                     <th>NIK</th>
                     <th>Nama Karyawan</th>
-                    <th>Foto</th>
-                    <th>Gaji Pokok</th>
-                    <th>Status</th>
                     <th>Level</th>
+                    <th>Status</th>
+                    <th>Gaji Pokok</th>
+                    <th>Foto</th>
                     <th>Aksi</th>
                 </tr>
             </thead>
             <tbody>
-                <?php $no=1 ?>
+                <?php $no = 1 ?>
                 <?php foreach ($datakaryawan as $k) : ?>
-                <tr>
-                    <th><?= $no++; ?></th>
-                    <td><?= $k['nik']; ?></td>
-                    <td><?= $k['nama_karyawan']; ?></td>
-                    <td><?= $k['foto']; ?></td>
-                    <td><?= $k['gajipokok']; ?></td>
-                    <td><?= $k['status']; ?></td>
-                    <td><?= $k['level']; ?></td>
-                    <td>
-                        <a href="" class="badge bg-warning">detail</a>
-                        <a href="" class="badge bg-success">edit</a>
-                        <a href="" class="badge bg-danger">delete</a>
-                    </td>
-                </tr>
+                    <tr>
+                        <th><?= $no++; ?></th>
+                        <td><?= $k['nik']; ?></td>
+                        <td><?= $k['nama_karyawan']; ?></td>
+                        <td><?= $k['level']; ?></td>
+                        <td><?= $k['status']; ?></td>
+                        <td><?= $k['gajipokok']; ?></td>
+                        <td><?= $k['foto']; ?></td>
+                        <td>
+                            <a href="" class="badge bg-success">edit</a>
+                            <a href="" class="badge bg-danger">delete</a>
+                        </td>
+                    </tr>
                 <?php endforeach; ?>
             </tbody>
         </table>
