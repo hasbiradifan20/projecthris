@@ -2,9 +2,12 @@
 
     <!-- Navbar -->
     <nav class="main-header navbar navbar-expand navbar-white navbar-light" style="background-color: #d4d4d4;">
-        <ul class="navbar-nav ml-2 ">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+            </li>
             <!-- Title -->
-            <h1 class="mr-5">PT. SAHAWARE TEKNOLOGI INDONESIA</h1>
+            <h1 style="margin-right: 360px;">PT. SAHAWARE TEKNOLOGI INDONESIA</h1>
             <!-- /Title -->
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
