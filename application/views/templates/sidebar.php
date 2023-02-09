@@ -235,8 +235,8 @@
                     </ul>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="<?= base_url('berkas') ?>" class="nav-link " style="background-color: #ffffff; color: black;">
-                                <p>Berkas Pelamar</p>
+                            <a href="<?= base_url('Recruitment/Datapelamar') ?>" class="nav-link " style="background-color: #ffffff; color: black;">
+                                <p>Data Pelamar</p>
                             </a>
                         </li>
                     </ul>
