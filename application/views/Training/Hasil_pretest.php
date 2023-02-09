@@ -9,23 +9,22 @@
             <thead>
                 <tr>
                     <th>No</th>
-                    <th>NIK</th>
-                    <th>Nama Karyawan</th>
-                    <th>Status</th>
-                    <th>Aksi</th>
+                    <th>id_hasilpretest</th>
+                    <th>id_pretest</th>
+                    <th>nik</th>
+                    <th>nilai</th>
                 </tr>
             </thead>
             <tbody>
                 <?php $no=1 ?>
-                <?php foreach ($datakaryawan as $k) : ?>
+                <?php foreach ($hasilpretest as $k) : ?>
                 <tr>
                     <th><?= $no++; ?></th>
+                    <td><?= $k['id_hasilpretest']; ?></td>
+                    <td><?= $k['id_pretest']; ?></td>
                     <td><?= $k['nik']; ?></td>
-                    <td><?= $k['nama_karyawan']; ?></td>
-                    <td><?= $k['Status']; ?></td>
-                    <td><?= $k['level']; ?></td>
+                    <td><?= $k['nilai']; ?></td>
                     <td>
-                        <a href="" class="badge bg-warning">detail</a>
                         <a href="" class="badge bg-success">edit</a>
                         <a href="" class="badge bg-danger">delete</a>
                     </td>

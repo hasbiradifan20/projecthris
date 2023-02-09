@@ -102,18 +102,52 @@
                             <i class="right fas fa-angle-right"></i>
                         </p>
                     </a>
-                    <ul class="nav nav-treeview">
+                    <ul class="nav nav-treeview nav-sidebar nav-child-indent">
                         <li class="nav-item">
-                            <a href="#" class="nav-link " style="background-color: #ffffff; color: black;">
-                                <p>Pelatihan</p>
+                            <a href="#" class="nav-link" style="background-color: #ffffff; color: black;">
+                                <p>
+                                    Pelatihan
+                                    <i class="right fas fa-angle-right"></i>
+                                </p>
                             </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link " style="background-color: #ffffff; color: black;">
+                                        <p>Pre-Test</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link " style="background-color: #ffffff; color: black;">
+                                        <p>Post-Test</p>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
-                    <ul class="nav nav-treeview">
+                    <ul class="nav nav-treeview nav-sidebar nav-child-indent">
                         <li class="nav-item">
-                            <a href="#" class="nav-link " style="background-color: #ffffff; color: black;">
-                                <p>Dokumentasi</p>
+                            <a href="#" class="nav-link" style="background-color: #ffffff; color: black;">
+                                <p>
+                                    Akumulasi jawaban
+                                    <i class="right fas fa-angle-right"></i>
+                                </p>
                             </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="<?= base_url('Training/Hasil_pretest') ?>" class="nav-link " style="background-color: #ffffff; color: black;">
+                                        <p>Jawaban Pre_Test</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link " style="background-color: #ffffff; color: black;">
+                                        <p>Jawaban Post_Test</p>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                     <ul class="nav nav-treeview">

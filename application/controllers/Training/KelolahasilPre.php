@@ -1,31 +1,39 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Kelola extends CI_Controller
+class KelolahasilPre extends CI_Controller
 {
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('Kelolapre_model');
+        $this->load->model('Kelolapretest_model');
     }
 
     public function index()
     {
-        $data['title'] = "Kelola HasilPreTest";
-        $data['kelolaHasilPreTest'] = $this->Kelola_model->getAllKelolaHasilPreTest();
+        $data['title'] = "Jawaban Pre_Test";
+        $data['hasilpretest'] = $this->Kelolapretest_model->getAllHasilPretest();
         $this->load->view('templates/header', $data);
         $this->load->view('templates/navbar');
         $this->load->view('templates/sidebar');
-        $this->load->view('Training/kelolapre', $data);
+        $this->load->view('Training/Hasil_pretest', $data);
         $this->load->view('templates/footer');
     }
-    public function hapus($id)
+    public function hapus($id_hasilpre)
     {
-        if ($this->Kelola_model->hapus($id)) {
+        if ($this->kelolapretest_model->hapus($id_hasilpretest)) {
             $this->session->set_flashdata('message', 'Data berhasil dihapus');
         } else {
             $this->session->set_flashdata('message', 'Data gagal dihapus');
         }
-        redirect('Training/kelolapre');
+        redirect('Training/Hasil_pretest'); //ke view training
+    }
+
+    public function tambah($id_hasilpretest)
+    {
+        {
+         $this->db->insert("nama_tabel", $data);
+        } 
     }
 }
+
